@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+:root {
+    --main-blue: #0056b3;
+    --btn-blue: #354E75;
+    --sky-blue: #007bff;
+    --slight-grey: #f5f5f5;
+    --more-grey: #ccc;
+}
+
+/*  */
+
+.form-container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+form .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button#submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--sky-blue); 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#submit-btn:hover {
+    background-color: #0056b3;
+}
+p.error-msg {
+    color: #ff0000;
+    font-style: italic;
+    font-size: .85rem;
+    text-align: start;
+}
+.get-user-location-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 8px;
+    margin-left: 10px;
+}
+/* Media query for phones and tablets*/
+@media screen and (max-width: 768px) {
+    input[type="text"] {
+        width: 100%;
+    }
+    /* #map {
+        height: auto;
+    } */
+}
+
+/*  */
+
+.info-container {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-container span {
+    display: block;
+    margin: 5px 0;
+}
+
+.info-location-name, .info-your-stop, .info-destination-name {
+    font-weight: bold;
+}
+
+.info-price {
+    font-size: 18px;
+    color: var(--sky-blue);
+}
+
+.info-button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.refactor-btn, .directions-btn {
+    background-color: var(--sky-blue);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.refactor-btn:hover, .directions-btn:hover {
+    background-color: #0056b3;
+}

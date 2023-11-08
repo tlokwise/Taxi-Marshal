@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+:root {
+    --main-blue: #0056b3;
+    --btn-blue: #354E75;
+    --sky-blue: #007bff;
+    --slight-grey: #f5f5f5;
+    --more-grey: #ccc;
+}
+#map-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#close-map-btn {
+    color: var(--slight-grey);
+    background-color: var(--sky-blue);
+    position: relative;
+    top:  2.5%;
+    left: 95%;
+    transform: translateX(-95%);
+    padding: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+}

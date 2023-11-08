@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/database-style.css" />
+    <link rel="stylesheet" href="/css/selected-info-style.css">
+    <title>Database - Taxi Marshal</title>
+  </head>
+  <body>
+    <div id="navigation">
+      <ul class="navbar navbar-expand bg-dark">
+        <li><img src="/assets/taxi tbg.png" alt="no image loaded" /></li>
+        <li class="nav nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav nav-item"><a class="nav-link" href="/">Add</a></li>
+        <li class="nav nav-item"><a class="nav-link" href="/mapper">Mapper</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="search-container">
+        <div class="form-group">
+          <input
+            type="text"
+            id="search-box"
+            class="form-control"
+            placeholder="Search"
+          />
+          <button class="btn btn-danger"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="form-group">
+          <!-- <label for="show">Show</label> -->
+          <select class="place-type-select form-control form-select">
+            <option value="locations">Taxi Ranks</option>
+            <option value="destinations">Destinations</option>
+          </select>
+        </div>
+      </div>
+      <div class="info-section"></div>
+ 
+    </div>
+
+    <script src="/js/database.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/index-style.css" />
+    <title>Marshal Administration</title>
+  </head>
+  <body>
+    <div id="navigation">
+      <ul class="navbar navbar-expand bg-dark">
+        <li><img src="/assets/taxi tbg.png" alt="no image loaded" /></li>
+        <li class="nav nav-item"><a class="nav-link" href="/database">Home</a></li>
+        <li class="nav nav-item"><a class="nav-link" href="#">Add</a></li>
+        <li class="nav nav-item"><a class="nav-link" href="/mapper">Mapper</a></li>
+      </ul>
+    </div>
+    <h1 class="text-center">Taxi Marshal Administration</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <select
+                name="type-of-place"
+                class="form-control form-select"
+                id="type-of-place"
+              >
+                <option value="destination">Destination</option>
+                <option value="location">Taxi Rank</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="inputText"
+                placeholder="Enter text"
+              />
+            </div>
+            <button type="button" id="review-btn" class="btn btn-primary">
+              Review
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box container"></div>
+    <div id="map"></div>
+    <script src="/js/app.js "></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_xPz1x1gIoH33Cq-Yat-j-tQvpZI5B_A&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
