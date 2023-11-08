@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/library-style.css" />
+    <link rel="stylesheet" href="/css/bottom-nav.css" />
+    <link rel="stylesheet" href="/css/header-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- map container will not be visible -- used to initialize search autocomplete -->
+    <div id="map"></div>
+    <header>
+      <img src="/assets/taxi tbg.png" alt="" />
+      <h1>Taxi Marshal</h1>
+    </header>
+
+    <div class="form-container">
+      <span>Your Location:</span>
+      <form action="">
+        <input type="text" id="user-location" placeholder="Your Location" />
+        <button type="button" class="get-user-location-btn">
+          <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
+          <img src="/assets/my-location-icon-30.png" alt="0" />
+        </button>
+      </form>
+    </div>
+
+    <div class="info-input-container">
+      <select id="place-type-select">
+        <option value="locations">Taxi Rank</option>
+        <option value="destinations">Destinations</option>
+      </select>
+      <div class="info-search-container">
+        <input
+          type="text"
+          name="info-search"
+          id="info-search"
+          placeholder="Search"
+        />
+        <button id="info-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="info-container">
+      <!-- <div class="info-item">
+        <span class="info-name">Klipfontein Taxi Rank</span>
+        <span class="info-address"
+          >Klipfontein View, Midrand, South Africa</span
+        >
+        <span class="info-distance-from-user">2km away</span>
+        <span class="place-id"></span>
+      </div> -->
+      <!-- STRUCTURE OF ALL CHILD ELEMENTS -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Explore</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="/contribute">Contribute</a></li>
+      </ul>
+    </nav>
+    <script src="/js/library-autocomplete.js"></script>
+    <script src="/js/library.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_xPz1x1gIoH33Cq-Yat-j-tQvpZI5B_A&libraries=places&callback=initSearchMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

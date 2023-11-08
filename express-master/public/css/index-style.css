@@ -1,0 +1,49 @@
+:root {
+    --primary-blue: #007bff;
+    --light-grey: lightgrey;
+}
+
+#navigation {
+    position: sticky;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-link {
+    color: white;
+}
+img {
+    height: 50px;
+    width: 70px;
+
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+#map {
+    background-color: grey;
+    position: absolute;
+    min-height: 80vh;
+    min-width: 95vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.info-box {
+    background-color: grey;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+.container {
+    margin-top: 20px;   
+}
+#view-in-map-btn {
+    margin-bottom: 10px;
+}
